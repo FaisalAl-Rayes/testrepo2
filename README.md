@@ -14,4 +14,4 @@ Consult the [documentation](https://github.com/konflux-ci/konflux-ci?tab=readme-
 - another test for a new integration test (punny jajaja)
 - now lets see if logs get picked up here again
 - lets get tekton metrics to work
-
+- test releases and snapshots
