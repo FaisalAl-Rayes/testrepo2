@@ -12,9 +12,9 @@ metadata:
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: test-app
-    appstudio.openshift.io/component: testrepo-component
+    appstudio.openshift.io/component: testrepo2-component
     pipelines.appstudio.openshift.io/type: build
-  name: testrepo-component-on-push
+  name: testrepo2-component-on-push
   namespace: default-tenant
 spec:
   params:
@@ -23,7 +23,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/konflux-ci-testing/default-tenant/testrepo-component:{{revision}}
+    value: quay.io/konflux-ci-testing/default-tenant/testrepo2-component:{{revision}}
   - name: dockerfile
     value: Dockerfile
   pipelineSpec:
@@ -392,7 +392,7 @@ spec:
     - name: netrc
       optional: true
   taskRunTemplate:
-    serviceAccountName: build-pipeline-testrepo-component
+    serviceAccountName: build-pipeline-testrepo2-component
   workspaces:
   - name: git-auth
     secret:
